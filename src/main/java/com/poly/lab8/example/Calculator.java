@@ -1,10 +1,13 @@
 package com.poly.lab8.example;
 
-public class Calculator implements Icaculator{
-    public Integer sum (Integer a, Integer b){
-        return 0;
+public class Calculator implements Icaculator {
+    @Override
+    public Integer sum(Integer a, Integer b) {
+        return 0;  // Trả về giá trị sai để test fail
     }
-    public Integer sub (Integer a, Integer b){
-        return 0;
+
+    @Override
+    public Integer sub(Integer a, Integer b) {
+        return 0;  // Trả về giá trị sai để test fail
     }
 }
