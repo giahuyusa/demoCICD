@@ -1,6 +1,6 @@
 name: Test CICD
 
-on: 
+on:
   push:
     branches:
       - main
@@ -15,13 +15,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Sửa '@v3v3' thành '@v3'
+        uses: actions/checkout@v3 # Sửa '@v3v3' thành '@v3'
 
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'  # Sửa '17Tets' thành '17'
+          distribution: "temurin"
+          java-version: "17" # Sửa '17Tets' thành '17'
 
       - name: Build and Test on Windows
-        run: mvn clean verify  # Sửa 'run:mvn' thành 'run: mvn'
+        run: mvn clean verify # Sửa 'run:mvn' thành 'run: mvn'
